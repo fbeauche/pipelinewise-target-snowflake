@@ -613,7 +613,7 @@ class DbSync:
 
                 # Run everything in one transaction
                 try:
-                    columns = self.query(queries, max_records=9999)
+                    columns = self.query(queries, max_records=99999)
                     table_columns.extend(columns)
 
                 # Catch exception when schema not exists and SHOW COLUMNS throws a ProgrammingError
